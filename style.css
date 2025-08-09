@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: my-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  position: absolute;
+}
+
+@keyframes my-animation {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  25% {
+    top: 0;
+    left: 500px;
+    background-color: green;
+  }
+  50% {
+    left: 500px;
+    top: 300px;
+    background-color: yellow;
+  }
+  75% {
+    left: 0;
+    top: 300px;
+    background-color: blue;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    background-color: red;
+  }
+}
+
